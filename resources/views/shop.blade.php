@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="container" style="margin-top: 80px">
         @if (Auth::check()) 
         <h4>Seja bem vindo {{Auth::User()->name}}</h4>

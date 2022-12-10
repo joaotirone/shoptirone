@@ -67,6 +67,11 @@
                      Ver Detalhes
                     </button>
                 </a>
+                <a href="{{ URL('/product/destroy/'.$f->id) }}">
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-eye"></i>
+                        deletar
+                    </button>
+                </a>
             </td>
         </tr>
         @endforeach

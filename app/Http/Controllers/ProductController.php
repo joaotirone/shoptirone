@@ -74,7 +74,7 @@ class ProductController extends Controller
     public function destroy($id)
     {
         
-        $produtos = DB::table('products')->where('id',$id)->delete($id);
+        DB::table('products')->where('id',$id)->delete($id);
         return redirect()->route('product.index');
         
     }

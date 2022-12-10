@@ -68,7 +68,6 @@ class UserController extends Controller
 			'cpf' =>$request->cpf,
 			'birthday' =>$request->birthday,
 			'email' =>$request->email,
-			'password' =>$request->password,
             
         ];
         DB::table('users')->where('id', $id)->update($data);
@@ -78,7 +77,7 @@ class UserController extends Controller
     public function destroyuser($id)
     {
         
-        $vend = DB::table('clients')->where('id',$id)->delete($id);
+        DB::table('users')->where('id',$id)->delete($id);
         return redirect()->route('user.index');
 
     }

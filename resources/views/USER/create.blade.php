@@ -10,8 +10,7 @@
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="{{ route('login') }}" method="post">
-                          @csrf
+                        <form id="login-form" class="form"  method="post">
                             <h4 class="text-center text-dark">Seja Bem Vindo</h4>
                             <div class="form-group">
                                 <label for="username" class="text-dark">Nome Completo:</label><br>

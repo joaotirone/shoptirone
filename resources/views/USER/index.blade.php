@@ -42,10 +42,6 @@
     </form>
           
 </section>
-<a href="{{route('user')}}">novo user</a>
-<form class="row g-3 margin-top-15">
-    <h3 class="btn btn-dark" >VENDAS</h3>
-</form>
 <section>
 <div class="card">
     <div class="card-body">
@@ -69,6 +65,11 @@
                 <a href="{{ URL('/user/edit/'.$f->id) }}">
                     <button class="btn btn-dark btn-sm"><i class="fa fa-eye"></i>
                      Ver Detalhes
+                    </button>
+                </a>
+                <a href="{{ URL('/user/destroy/'.$f->id) }}">
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-eye"></i>
+                        deletar
                     </button>
                 </a>
             </td>

@@ -21,6 +21,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login.user')}}">Entrar</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.index') }}">Usuários</a>
+                </li>
                 </ul>
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle"
